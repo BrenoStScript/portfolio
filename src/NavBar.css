@@ -1,0 +1,36 @@
+.NavBar{
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: rgba(21, 21, 21, 0.1);
+    height: 5vh;
+}
+
+.items{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    height: 5vh;
+    width:95vw;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    justify-items: start;
+    align-items:center;
+}
+
+.items:first-child{
+    margin-left: 5vw;
+}
+
+.item{
+    font-weight: 550;
+    font-size: 1vw;
+    color:white;
+}
+
+.item:hover{
+    cursor: pointer;
+    color:#00d8fe;
+    text-shadow: 0 0 1em #00d8fe;
+}

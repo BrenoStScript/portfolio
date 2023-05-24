@@ -1,0 +1,79 @@
+
+
+.project img{
+    width: 50%;
+}
+
+.project-content{
+    font-size: 1vw;
+    width:100%;
+    transform: rotate(20deg);
+    overflow: hidden;
+    max-inline-size: 50ch;
+}
+
+.project-content h1{
+    font-size: 1.5vw;
+}
+
+.project{
+    height: 140%;
+    width: 100%;
+    overflow: hidden;
+    border-left: .2vw solid #00d8fe;
+    transform: rotate(-20deg) translateY(-15%) translateX(20%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.project::before{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:url(./assets/JS-logo.png);
+    background-size: 7vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #F7DF1C;
+    z-index: 10;
+    transition: 1000ms;
+    
+}
+
+.last::before{
+    content:'';
+    background-image:url(./assets/react-1-logo-png-transparent.png);
+    background-color: #222222;
+    
+}
+
+.last{
+    border-right: .2vw solid #00d8fe;
+}
+
+.projects{
+    margin-top: 0;
+    height: 90vh;
+    width:50vw;
+    display:grid ;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    position: relative;
+    transition: 2000ms;
+    overflow:visible;
+}
+
+.project:hover{
+    width: 30vw;
+    transform: rotate(-20deg) translateY(-15%) translateX(8%);
+}
+
+.project:hover::before{
+    opacity: 0;
+}
+

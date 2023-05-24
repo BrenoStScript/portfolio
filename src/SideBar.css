@@ -1,0 +1,22 @@
+.sidebar{
+    position:absolute;
+    left:1vw;
+    bottom: 3vh;
+}
+
+.fig img{
+    width:3vw
+}
+
+.fig{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4vw;
+    margin-bottom: 2vh;
+}
+
+img:hover{
+    border-radius: 50%;
+    box-shadow: 0 0 1vw 0 #00d8fe;
+}
