@@ -1,7 +1,12 @@
 
 
 .project img{
-    width: 50%;
+    width: 35vh;
+    height: 25vh;
+}
+
+.project img:hover{
+    border-radius: 10px;
 }
 
 .project-content{
@@ -9,7 +14,7 @@
     width:100%;
     transform: rotate(20deg);
     overflow: hidden;
-    max-inline-size: 50ch;
+    max-inline-size: 35ch;
 }
 
 .project-content h1{
@@ -75,5 +80,6 @@
 
 .project:hover::before{
     opacity: 0;
+    z-index: -1;
 }
 
