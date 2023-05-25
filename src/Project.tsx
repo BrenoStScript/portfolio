@@ -17,8 +17,8 @@ function Project(){
             </div>
             <div className='project'>
                 <div className='project-content'>
-                    <h1>NextTale</h1>
-                    <p>Project made with React + Vite.<br/> Consuming the IMDB API the site gives recomendations based on the last show you whatched  </p>
+                    <h1>Stay tunned</h1>
+                    <p>Project under development<br/> Soon to be</p>
                     <a>
                         <img src={logoRoxo}/>
                     </a>
@@ -26,8 +26,8 @@ function Project(){
             </div>
             <div className='project'>
                 <div className='project-content'>
-                    <h1>NextTale</h1>
-                    <p>Project made with React + Vite.<br/> Consuming the IMDB API the site gives recomendations based on the last show you whatched  </p>
+                    <h1>Stay tunned</h1>
+                    <p>Project under development<br/> Soon to be added.</p>
                     <a>
                         <img src={logoRoxo}/>
                     </a>
@@ -35,8 +35,8 @@ function Project(){
             </div>
             <div className='project last'>
                 <div className='project-content'>
-                    <h1>NextTale</h1>
-                    <p>Project made with React + Vite.<br/> Consuming the IMDB API the site gives recomendations based on the last show you whatched  </p>
+                    <h1>More Projects</h1>
+                    <p>If you want to know my better<br/> There'll be more projects right here.</p>
                     <a>
                         <img src={logoRoxo}/>
                     </a>
