@@ -18,7 +18,7 @@ function Project(){
             <div className='project'>
                 <div className='project-content'>
                     <h1>Stay tunned</h1>
-                    <p>Project under development<br/> Soon to be</p>
+                    <p>Project under development<br/> Soon to be added.</p>
                     <a>
                         <img src={logoRoxo}/>
                     </a>
