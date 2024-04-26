@@ -7,12 +7,12 @@ function SideBar(){
 
     return(
         <div className='sidebar'>
-            <div className='fig'>
+            <a href='https://github.com/BrenoStScript' target='blank' className='fig'>
                 <img src={gitHubBlue}/>
-            </div>
-            <div className='fig'>
+            </a>
+            <a href='https://www.linkedin.com/in/breno-santos-stscript/' target='blank' className='fig'>
                 <img src={linkedInBlue} />
-            </div>
+            </a>
             <div className='fig cv'>
                 <img src={curriculumBlue} />
             </div>
