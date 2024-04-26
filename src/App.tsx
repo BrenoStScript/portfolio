@@ -1,34 +1,25 @@
-import { useState } from 'react'
-import SideBar from './SideBar'
-import './App.css'
-import NavBar from './NavBar'
-import logo from "./assets/logo-preto.png"
-import Project from './Project'
+import SideBar from "./SideBar";
+import "./App.css";
+import NavBar from "./NavBar";
+import logo from "./assets/logo-preto.png";
+import Project from "./Project";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <NavBar/>    
+      <NavBar />
       <div className="App">
+        <div className="presentation">
+          <img src={logo} />
+          <h1>Front-end Developer</h1>
+          <p>Portfolio website made with React + Vite </p>
+        </div>
 
-      <div className='presentation'>
-        <img src={logo}/>
-        <h1>Front-end Developer</h1>
-        <p>Portfolio website made with React + Vite </p>
+        <Project />
+        <SideBar />
       </div>
-
-      <Project/>
-      <SideBar/>
-      
-
-      
-
-    </div>
-
     </>
-  )
+  );
 }
 
-export default App
+export default App;

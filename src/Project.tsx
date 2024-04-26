@@ -1,5 +1,6 @@
 import logoRoxo from './assets/Logo.png'
 import vaccineCard from './assets/vaccine-card.jpg'
+import toDoList from './assets/to-do-list.jpg'
 import './Projects.css'
 
 
@@ -15,12 +16,12 @@ function Project(){
                     </a>
                 </div>
             </div>
-            <div className='project'>
+            <div className='project react'>
                 <div className='project-content'>
-                    <h1>Stay tunned</h1>
-                    <p>Project under development<br/> Soon to be added.</p>
-                    <a>
-                        <img src={logoRoxo}/>
+                    <h1>To-do List</h1>
+                    <p>Project made with React<br/>To-do List application wich uses Local Storage</p>
+                    <a href='https://to-do-list-seven-black.vercel.app/' target='blank' > 
+                        <img src={toDoList}/>
                     </a>
                 </div>
             </div>
