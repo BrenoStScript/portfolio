@@ -1,6 +1,7 @@
 import logoRoxo from './assets/Logo.png'
 import vaccineCard from './assets/vaccine-card.jpg'
 import toDoList from './assets/to-do-list.jpg'
+import digitalBible from './assets/digital-bible.jpg'
 import './Projects.css'
 
 
@@ -25,12 +26,12 @@ function Project(){
                     </a>
                 </div>
             </div>
-            <div className='project'>
+            <div className='project react'>
                 <div className='project-content'>
-                    <h1>Stay tunned</h1>
-                    <p>Project under development<br/> Soon to be added.</p>
-                    <a>
-                        <img src={logoRoxo}/>
+                    <h1>Digital Bible</h1>
+                    <p>Project made with TS + Tailwind + Axios<br/>Application that fetchs data from an API and provides Verses from different versions of the Bible</p>
+                    <a href='https://digital-bible-one.vercel.app/' target='blank'>
+                      <img src={digitalBible}/>
                     </a>
                 </div>
             </div>
