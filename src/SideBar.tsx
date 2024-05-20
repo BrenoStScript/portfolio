@@ -1,9 +1,27 @@
 import gitHubBlue from './assets/Slice 2.png'
 import linkedInBlue from './assets/linked-in-blue.png'
 import curriculumBlue from './assets/Slice 1.png' 
+import resume from './assets/resume.jpg'
 import './SideBar.css'
+import { useRef } from 'react'
 
 function SideBar(){
+
+    const modal = useRef<HTMLDialogElement>(null);
+
+    const openModal = () =>{
+        if(!modal.current){
+            return;
+        }
+        modal.current.showModal()
+    }
+
+    const closeModal =()=>{
+        if(!modal.current){
+            return;
+        }
+        modal.current.close()
+    }
 
     return(
         <div className='sidebar'>
@@ -13,9 +31,14 @@ function SideBar(){
             <a href='https://www.linkedin.com/in/breno-santos-stscript/' target='blank' className='fig'>
                 <img src={linkedInBlue} />
             </a>
-            <div className='fig cv'>
+            <div onClick={openModal} className='fig cv'>
                 <img src={curriculumBlue} />
             </div>
+
+            <dialog ref={modal}>
+                <img src={resume} />
+                <button onClick={closeModal} > CLOSE </button>
+            </dialog>
         </div>
     )
 }
